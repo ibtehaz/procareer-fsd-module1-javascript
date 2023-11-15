@@ -1,0 +1,80 @@
+str_val="Javascript";
+len=str_val.length;//returns the num of characters in the string(includes space also)
+
+for(let i=0;i<=len;i++){
+    console.log(i,"--",str_val[i]);
+}
+
+//padStart(num_of_charac,char)
+console.log(str_val.padStart(12,"-"));
+
+//repeat(count)
+console.log(str_val.repeat(3));
+
+//Difference substring() between slice()
+
+//another way of creating
+let str1="What am I";
+let str2= new String("What am I");
+let str3=String("What am I");//Coercion
+
+console.log("str1: ",typeof str1);
+console.log("str2: ",typeof str2);
+console.log("str3: ",typeof str3);
+
+if(str1==str3){
+    console.log("==Same");
+}
+if(str1===str3){
+    console.log("===Same");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//for(begin;condition;step)
+//for(initial_exp;condition;update_exp)
+
+for(let i=1;i<5;i++){
+    console.log(i," in for");
+}*/
+
+/*
+let num =1;
+
+while(num < 5){
+    console.log("The value of num: ",num);
+    ++num;
+}
+console.log("do- while");
+
+do{
+    console.log("The value of num: ",num);
+    ++num;
+}while(num<5);*/
+
+/*
+do{
+    //while code
+}while(condition);
+*/
+
+
+
+/*
+while(condition){
+    While body
+}
+*/
