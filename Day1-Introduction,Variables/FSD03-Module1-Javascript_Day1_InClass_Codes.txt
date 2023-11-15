@@ -1,0 +1,73 @@
+//var,let and const
+//int num=23 - statically typed
+var name="Pooja";//Dynamically typed
+console.log(name);
+var name;//Redeclaration
+var name="Cassey";//ReInitialization
+console.log("Redeclaration: "+name);
+
+
+let phone=1234;
+console.log(phone);
+//let phone;//Redeclaration not allowed
+phone=3456;//Reinitialization
+console.log("Using let: ",phone);
+
+const PERSON={
+    name:"Alec",
+    desg:"Senior SE"
+};
+
+console.log(PERSON.name);
+PERSON.name="Armen";
+console.log("After change: ",PERSON.name);
+
+
+//Scope Example
+var age=3;//Declaration andInitialization
+
+if(age>=18){
+    let res;//Declaration
+    res="Eligible to vote";
+   // console.log(res);
+}
+else{
+    res="Not Eligible to vote";
+    //console.log(res);
+}
+console.log(res);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+Single line comment - //
+multiline comment - Content
+Reading data and Displaying data
+let read_data=require('readline');
+
+let data=read_data.createInterface(process.stdin,process.stdout);
+
+//question(message,call_back_func)
+data.question("Enter a num: ",function(line){
+    solution(line);
+    data.close();
+})
+
+function solution(num)
+{
+    console.log("The data entered: "+num);
+}
+*/

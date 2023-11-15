@@ -1,0 +1,156 @@
+//Control Structures
+let weather=70
+
+if(weather>70){
+    console.log("Its pleasant");
+}
+else if(weather<70){
+    console.log("Its a Pool day");
+}
+else if(weather <= 70 && weather >= 60){
+    console.log("Started getting cold")
+}
+else{
+    console.log("Enter valid temperature");
+}
+
+//Print days of the week when number is entered
+let num=4;
+switch(num){
+    case 1:
+    case 2:
+    case 3:
+    case 4:
+        console.log("Today is Weekday");
+        break;
+    case 6:
+    case 7:
+        console.log("Today is Weekend");
+        break;
+    default:
+        console.log("Happy Day");
+        break;
+    
+}
+
+let marks=80;
+
+switch(true){
+    //If score is greater than =80 and <=100,print First class
+    case(marks<=100 && marks >=80):
+        console.log("Grade A");
+        break;
+    
+    default:
+        console.log("Failed");
+        break;
+}
+
+//Take 3 numbers from the user, print the count of numbers that are equal
+//1 2 3 Output: 0
+//1 1 1 Output: 3
+//1 3 3 Output: 2
+//3 2 2 Output: 2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//Comparision Operator
+let a1="5";
+let a2=5;
+if(a1===a2){
+    console.log("Equal");
+}
+else{
+    console.log("Not Equal");
+}*/
+
+/*
+//ternary operator - expression/condition?exp1:exp2
+
+let result=(a1===a2)?"Equal":"Not equal";
+console.log("Ternary Operator",result);
+
+//Enter marks. If marks are greater than 70,print pass otherwise print fail using ternary operator
+//If marks >= 70 => print Grade A,  marks >= 60 => print Grade B,marks >= 50 => print Grade C
+
+//FInd the max of 3 numbers using ternary operator
+
+//Logical operator - 0,false,undefined,null
+let val=null;
+let val2=undefined;
+*/
+
+/*
+//Post and Pre Increment Operators
+
+let a=10;
+let b=11;
+//a++ = a+1
+//++b = b+1
+
+console.log(a++);//var++ or var--
+console.log(++b);//++var or --var
+console.log(a);
+let p=9;
+let q=9;
+
+p=q++;
+q=p++;
+q=++q;
+
+console.log(p);
+console.log(q);
+
+let m=1;
+let n=3;
+
+n= m++ + m++ + m++ + m++ + ++m
+console.log(m,n);
+
+*/
+
+
+
+
+
+
+
+/*
+//Function hoisting
+'use strict'
+let x=20;
+y=10;//global variable
+let result=add(x,y);
+console.log(result);
+
+function add(a,b){
+    return a+b;
+}
+*/
+
+/*
+//Variable hoisting
+
+console.log(counter);
+var counter=2;
+let counter=1;//Declaration and Initalization
+
+var count;//declaration
+count=2;//Initialization*/
+
