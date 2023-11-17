@@ -1,0 +1,154 @@
+// let str = "He said, \"Hello to me\"";
+// let greet = `He said, "Bye to me"`
+// console.log(str)
+// console.log(greet)
+
+// function fun(){
+// //var name
+// console.log(name) //undefined
+// console.log(age) //Reference Error
+// var name = "Robert"
+// let age = 21
+// }
+// fun()
+
+// let a = 25
+// let b = new Number(25)
+// console.log(a==b)
+// console.log(a===b)
+// console.log(typeof a)
+// console.log(typeof b)
+
+let x =( function (){
+    return "hello"
+}())
+
+console.log(x)
+
+
+
+
+
+
+
+
+
+
+
+//functions
+
+// function add(){
+//     let count=0;
+    
+//     function inner_add(){
+//         count +=1;
+//         //return count;
+//     }
+    
+//     inner_add();
+//     //return inner_add;
+//     //return count;
+// }
+// add();
+// let res=add();
+// console.log(res);
+
+/*let res=add();
+console.log(res());
+console.log(res());
+console.log(res());
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*function outer_fn(){
+    //var out_var=1;
+    
+    function inner_fn(){
+        let out_var=1;
+    }
+    console.log(out_var);
+    inner_fn();
+}
+
+outer_fn();
+
+*/
+
+
+
+
+
+/*
+//free variable
+function num_generator(){
+    var num=1;//free variable
+    
+    //nested function
+    function check_num(){
+        console.log("Inside check_num: ",num)
+    }
+    num++;
+    
+    return check_num;
+}
+
+var res=num_generator();
+res();
+*/
+/*
+//Java syntax: public return_type method_name(paramter)
+
+//function declaration
+//formal parameters, parmaters
+function add(a,b){
+    console.log(`The sum is: ${a+b}`);
+   // let res=a+b;
+    //return res;
+
+}
+
+//function expression
+let sub_res=function(x,y){
+    return x-y;
+}
+
+//function
+let x=12;
+let y=23;
+console.log(add(x,y));//actual parameters,arguments
+console.log("The result is : ",sub_res(2,3));
+*/
+
+/*
+//String Literal
+let char='j';
+let str="KMIT";
+console.log(char);
+console.log(str);
+
+
+//literal syntax: ${...}
+let name="Alec";
+console.log(`Welcome to ${name} JS`)//Welcome ALec to JS
+let sentence=`Hello Hi
+My name is Pooja
+Im a technical trainer`;
+console.log(sentence);
+
+let res=4+5;
+console.log(`The sum is ${res}`);
+console.log(`${res}` < 10 ?'Too Low':'Too High');
+*/

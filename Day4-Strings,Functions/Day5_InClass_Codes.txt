@@ -1,0 +1,152 @@
+//Date Object
+const now=new Date();
+console.log(now);
+
+const date=new Date("October 31,2021,10:30:00");
+console.log(date);
+
+console.log(now.getTime());
+console.log(now.getDay());
+console.log(now.getFullYear());
+//getHours()
+//getMonths()
+//getMinutes()
+
+//UTC started
+const now1=new Date(0);
+console.log(now1);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//call-back functions
+let start=()=>console.log("Started");
+start();
+setTimeout(function() {console.log("In setTimeout")}, 10);
+let end=()=>console.log("Ended");
+end();
+*/
+/*
+//aproach-1
+let first=()=>{
+    console.log("first function");
+    second();
+}
+
+let second=()=>{
+    console.log("second function");
+}
+
+first();
+
+//approach-2
+let add=(x,y,mycallback)=>{
+   // console.log(`The result is ${x+y}`);
+   let res=x+y;
+    display(res);
+}
+
+function display(res){
+    console.log(res);
+}
+
+add(12,23,"my_caller");*/
+
+
+
+
+
+
+//Self invocation
+/*Syntax:
+(function(params){
+    //body of the function
+})();
+
+
+(function(){
+    console.log("Inside Self Invoking function");
+})();
+
+(function(x,y){
+    let res=x+y;
+    console.log(res);
+})(1,2);
+*/
+
+/*
+//rest parameters=>...var_name
+function stud_details(name,...marks){
+    console.log(name);
+   // console.log(marks);
+    //for(let i=0;i<3;i++){
+      //  console.log(marks[i]);
+    //}
+    
+    for(let elt of marks){
+        console.log(elt);
+    }
+}
+stud_details("PC",23,"34",45,"45",56.5);
+
+//function declaration
+function add(x,y){
+    return x+y;
+}
+
+let res=function(x,y){
+    return x+y;
+}
+
+//arrow function
+let res_arr=(x,y)=>{
+    return x+y
+}
+
+let res_arr1=(x,y)=>x+y;
+
+//app-1->arrow function which returns an expression
+let var1=()=>console.log("Im an arrow function");
+var1();
+
+//app-2(with parameters)
+let var2=(name)=>name+" is in arrow function";
+console.log(var2("Alec"));
+
+//app-3
+let var3=(x)=>{
+    return x*x;
+}
+console.log(var3(5));
+
+//app-4(multiple parameters)
+let var4=(x,y,z)=>{
+    return x*y*z;
+}
+
+//creating arrow functions dynamically
+let age=12;
+let welcome=(age<18)?
+()=>console.log("Welcome Toddler"):
+()=>console.log("Welcome Grownup");
+welcome(age);
+
+*/
+
+
+
+
+
+
+

@@ -1,0 +1,205 @@
+//Arrays
+//Filter -used to filter ur collection/iterables
+//modified_colln=iterable.filter(call_back_fun);
+
+const nums=[1,2,3,4,5,6];
+
+function even_num(num){
+    if(num%2==0){
+        return true;
+    }
+    else{
+        return false;
+    }
+}
+
+const even_arr=nums.filter(even_num);
+console.log(even_arr);
+
+const prices=[1000,200,"Five",90,null];
+//output=[1000,200,90];
+
+const res=prices.filter((price)=>!Number.isNaN(price));
+console.log(res);
+
+
+
+
+/*
+//Map
+//map(call_back(),array);
+
+const scores=[67,78,89,87,56];
+console.log(scores);
+
+//call_back function
+function edit_scores(sc_elt){
+    return sc_elt+1;
+}
+//python - map(fn,iterable);
+//javascript - iterable.map(fun);
+const modified_arr=scores.map(edit_scores);
+console.log(modified_arr);
+
+const nums=[1,2,3,4,5];
+console.log(nums);
+
+//call_back function
+function squares(each_num){
+    return each_num*each_num;
+}
+const square_arr=nums.map(squares);
+console.log(square_arr);
+
+//arrow function
+const sq_arr=nums.map((sq)=>sq*sq);
+console.log(sq_arr);
+
+
+*/
+
+
+
+
+
+
+
+
+/*
+let nums=[1,2,3,4,5,6,7,8,9];
+
+let new_arr=nums.slice(2,6);
+let new_arr1=nums.slice(2);//when no end value is passed.end=last index
+
+//negative index
+let new_arr2=nums.slice(0,-1);
+console.log(new_arr2);
+
+let new_arr3=nums.slice(-2);
+console.log(new_arr3);
+
+//splice()-add,remove or replace elements in an array
+*/
+
+/*
+//approach -1
+const emp_arr=[];//empty array
+const emp_ids=[101,102,103,104];
+const emp_names=["Alec","PC","Ibetehaz"];
+const mixed_arr=[1,1.2,"Cassey"];
+
+console.log(emp_arr);
+console.log(emp_names);
+console.log(mixed_arr);
+
+//adding elements to empty array
+
+//app-1
+emp_arr[0]=1;
+emp_arr[1]=1;
+emp_arr[2]=1;
+emp_arr[3]=1;
+
+console.log(emp_arr);
+
+//app-2
+for(let i=0;i<5;i++){
+    emp_arr[i]=1;
+}
+
+//app-3
+for(let i=0;i<5;i++){
+    emp_arr.push(1)
+}
+let ret_unshift=emp_arr.unshift(12,34,45);
+console.log("Unshift returns: ",ret_unshift);
+
+let ret_push=emp_arr.push(99,77);
+console.log("push returns: ",ret_push);
+
+console.log(emp_arr);
+
+//Accessing arrays
+//[] - notation
+console.log(emp_arr[3]);
+console.log("Number of elements: ",emp_arr.length);
+console.log(emp_arr[emp_arr.length-1]);
+
+console.log(emp_arr[-1]);//-ve index not allowed
+
+//push and unshift method returning??
+
+//accessing the array
+//traditional way
+for(let i=0;i<emp_name.length;i++){
+    console.log(emp_name[i]);//=>emp_name[0]
+}
+
+//app-2(for(let item of collection)
+for(let item of emp_name){
+    console.log(item);
+}
+
+//modifying
+emp_name[0]="Pooja";
+console.log(emp_name.pop());
+console.log(emp_name.shift());
+
+const books=[];
+//delete using pop and shift
+
+const cars=["BMW","Volvo","JEEP","AUDI"];
+console.log(cars.indexOf("Volvo"));
+console.log(cars.lastIndexOf("Volvo"));
+
+const price_list=[1,2,3,1,1,1,3,4,3];
+//indexOf(search_elt,fromIndex=0);
+console.log(price_list.indexOf(1,3));
+console.log(price_list.lastIndexOf(1));
+*/
+
+/*
+//Find all the Occurences of the given element
+let prices=[10,8,3,31,22,19,23,10,1,1];
+Input=10
+Output=[0,7]
+
+Input: 8
+Output=[1]
+
+Input:2
+Output:[]
+*/
+
+
+
+
+
+
+
+
+
+
+/*
+const a=new Number('123');//using object
+const b=Number('123');//primitive DT
+console.log(typeof a);
+console.log(typeof b);
+
+console.log(Number.MAX_VALUE);
+
+const res=0.1+0.2;
+console.log(res.toFixed(1));
+//toPrecision()
+const val=13.4567
+console.log(val.toPrecision(2));
+console.log(val.toPrecision(3));
+console.log(val.toPrecision(10));
+
+//let num=5000000000
+let num=0.00005
+console.log(num.toExponential());
+//5.5678e+0 => 5.5678*10 power of 0
+//5e+9 =>5*10 power 9
+//5e-5 => 5*10 power of -5
+*/
