@@ -1,0 +1,203 @@
+/*
+const obj_name={
+    key:val,
+    key:val
+}
+*/
+const car={
+    name:"BMW",
+    engine:3000,
+    type:"Pedal"
+}
+
+//using . notation
+console.log(car.name);
+console.log(car.engine);
+console.log(car.type);
+
+//using [] notation
+console.log(car["name"]);
+
+//nested object
+const stud={
+    name:"Alec",
+    rollno:1,
+    marks:{
+        science:90,
+        math:80,
+        eng:89
+    },
+    dis:function(){
+        console.log(`${stud.name} has a good score card ${stud.marks}`)
+    }
+}
+//access marks
+console.log(stud.marks);
+console.log(stud.marks.eng);
+
+console.log(delete stud.marks.eng);//delete property
+console.log(stud);
+
+console.log(stud["marks"]["eng"]);
+console.log(stud["marks"][0]);
+console.log(stud.dis());
+
+//count pets -How many times each string appears in the given array
+const pets=["dog","cat","rabbit","snake","dog","cat"];
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+//Array Destructing
+let nums=[1,2,3,4,5];
+let [a,,,,b]=nums;
+console.log(a);
+console.log(b);
+
+//swapping using array destructing
+let p=12;
+let q=24;
+[p,q]=[q,p];
+
+console.log(p);
+console.log(q);
+
+function calculator(x,y){
+    const add=x+y;
+    const sub=x-y;
+    const mul=x*y;
+    const div=x/y;
+    
+    return[add,sub,mul,div];
+}
+
+let [a_res,s_res,m_res,d_res]=calculator(1,2);
+console.log(a_res);
+
+console.log("-----------------------------------------------")
+const data=["Pooja","Godse"];
+
+function display([f_name,l_name]){
+    console.log(`My Name is ${f_name} ${l_name}`);
+}
+
+display(data);
+
+console.log("-----------------------------------------------");
+const details="Im Pooja Godse Technical Trainer in KMIT";
+const arr=details.split(" ");
+
+const[,fn,ln,...rest]=arr;
+console.log(fn);
+console.log(ln);
+console.log(rest);
+
+console.log("----------------Spread Operator-------------------");
+const par_us=['a','b','c','d'];
+console.log("unpackage",...par_us);
+const par_ghana=['a','b','c','d'];
+const combi_par=[...par_us, ...par_ghana];
+console.log(combi_par);
+
+
+const nums12=[2,3,1,4,5,6,11];
+//Math.min(1,2,3,4,5,5);
+console.log(Math.min(...nums12));//unpacking- spread operator
+console.log(Math.min(nums12));
+*/
+
+/*
+//Array creation
+//array literal
+let vals=[1,2,3,4];
+
+let arr1=new Array(34);
+let arr2=new Array("abc");
+
+//console.log(arr1.length);
+//console.log(arr1[0]);
+
+//Array.of()
+let arr3=Array.of(11);
+let arr4=Array.of("blue");
+console.log(arr3.length);
+console.log(arr3[0]);
+
+console.log(arr4.length);
+console.log(arr4[0]);
+
+
+//Arrayfrom(iteral_obj,map_fn,this_arg)
+let arr_str=Array.from("Javascript");
+console.log(arr_str);
+
+//Converting into uppercase using Array.from();
+//['J','A','V','A']
+
+
+function creates_arr(it_obj,map_fun){
+    return Array.from(it_obj,map_fun);
+}
+
+let even_nums=creates_arr([2,4,6],(elt)=>elt+2);
+console.log(even_nums);
+
+let upp_data=creates_arr(arr_str,(letter)=>letter.toUppercase());
+*/
+
+/*score_card.reduce(callback_fn,initial_val);
+call_back_fn 4 params
+accumalator = the returned val of the previous iteration
+curr_val = The current item 
+index = index of the current item
+array = the original array
+*/
+/*
+
+let score_card=[1,1,1,1,1];
+
+let sum=score_card.reduce(function(res,item){
+   return res +=item 
+},0);
+console.log(sum);
+
+//find(arg1,arg2) - arg1 => call_back_fun, arg2 - condition
+
+let ages=[23,23,34,45,55,6,78];
+
+function chec_age(val){
+    return val > 23;
+}
+let res=ages.find(chec_age);
+console.log(res);
+
+let vals=[5,3,4,11,23,44]
+let res1=vals.find((i)=>{return i>3});
+console.log(res1);*/

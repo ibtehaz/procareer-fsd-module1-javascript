@@ -1,0 +1,155 @@
+let student = {
+    rollno : 21,
+    firstName : "Williams",
+    lastName : "Shantel",
+    subject1 : 45,
+    subject2 : 67,
+}; 
+
+
+//Object class properties
+
+console.log(Object.keys(student)); //rollno, firstName, lastName, subject1, subject2
+
+console.log(Object.values(student)); //21, Williams, Shantel, 45, 67
+
+for(let [key,value] of Object.entries(student)){
+    console.log(key+" : "+value);
+}
+
+console.log(student.hasOwnProperty('rollno')); //true
+console.log(student.hasOwnProperty('degree')); //false
+
+//ES6 version
+// let student = {
+//     rollno : 21,
+//     firstName : "Williams",
+//     lastName : "Shantel",
+//     subject1 : 45,
+//     subject2 : 67,
+//     total() {
+//         return student.subject1 + student.subject2;
+//     },
+//     'result'(){
+//         console.log(`Roll no : ${student.rollno} `);
+//         console.log(`Name  : ${student.firstName}  ${student.lastName}`);
+//         console.log(`Total marks : ${student.total()}`);
+//     }
+// };
+// //student.result();
+// student['result']();
+
+//object destructuring
+// let student = {
+//     rollno : 21,
+//     firstName : "Williams",
+//     lastName : "Shantel",
+//     subject1 : 45,
+//     subject2 : 67,
+// }; 
+
+//variable name should match with the property(key) name
+// let {x,y} = student;
+// console.log(x);
+// console.log(y);
+
+// let {rollno, lastName} = student;
+// console.log(rollno);
+// console.log(lastName);
+
+//object destructuring with default values
+// let {rollno, lastName, degree='Bachelors'} = student;
+// console.log(rollno);
+// console.log(lastName);
+// console.log(degree);
+
+
+// let {rollno, lastName} = student;
+// let obj = {rn:rollno, ln:lastName};
+// console.log(obj.rn);
+// console.log(obj.ln);
+
+// let {rollno, lastName, ...restargs} = student;
+// console.log(rollno);
+// console.log(lastName);
+// console.log(restargs);
+
+//spread operator
+// let obj1 = {one:1,two:2};
+// let obj2 = {four:4, five:5};
+
+// let combinedObj = {...obj1, three:3, ...obj2};
+
+// console.log(combinedObj);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//objects
+// let obj = {
+//     key:value,
+//     key:value
+// }
+
+// let arr = [1,2,3,4];
+// console.log(typeof arr);
+
+//prior ES6
+// let student = {
+//     rollno : 21,
+//     firstName : "Williams",
+//     lastName : "Shantel",
+//     subject1 : 45,
+//     subject2 : 67,
+//     total : function () {
+//         return student.subject1 + student.subject2;
+//     },
+//     result : function (){
+//         console.log(`Roll no : ${student.rollno} `);
+//         console.log(`Name  : ${student.firstName}  ${student.lastName}`);
+//         console.log(`Total marks : ${student.total()}`);
+//     }
+// };
+// student.result();
+// console.log(student);
+// console.log(typeof student);
+// console.log(student.firstName);
+// console.log(student['firstName']);
+// console.log(student['100']);
+// console.log(student.total());
+
+
+// let pets = ['cat','dog','rabbit','dog', 'cat','crocodile'];
+// let countPets = pets.reduce((obj,pet)=>{
+//     if(!obj[pet]){
+//         obj[pet] = 1
+//     }else{
+//         obj[pet]++
+//     }
+//     return obj
+// },{})
+// console.log(countPets)
+
+
+
+
+
+
